@@ -12,9 +12,12 @@
 
 
         <div class="row m-5">
-            <div class="col-md-12">
+            <div class="col-md-10">
                 <h1>CV Generator</h1>
                 <hr>
+            </div>
+            <div class="col-md-2 ">
+                <a href="{% url "list" %}" class="btn btn-outline-info">Resume List</a>
             </div>
         </div>
 
@@ -31,27 +34,27 @@
 
                     <div class="form-group">
                         <label for="">Name</label>
-                        <input name="name" type="text" class="form-control" id="name"  placeholder="Eg John Doe">
+                        <input name="name" type="text" class="form-control" id="name" placeholder="Eg John Doe" required>
                     </div>
 
                     <div class="form-group">
                         <label for="">Phone</label>
-                        <input name="phone" type="text" class="form-control" id="phone"  placeholder="Eg 99999999999999">
+                        <input name="phone" type="text" class="form-control" id="phone"  placeholder="Eg 99999999999999" required>
                     </div>
 
                     <div class="form-group">
                         <label for="">Email</label>
-                        <input name="email" type="text" class="form-control" id="email"  placeholder="Eg @hotmail.com">
+                        <input name="email" type="text" class="form-control" id="email"  placeholder="Eg @hotmail.com" required>
                     </div>
 
                     <div class="form-group">
                         <label for="">School</label>
-                        <input name="school" type="text" class="form-control" id="school"  placeholder="MIT">
+                        <input name="school" type="text" class="form-control" id="school"  placeholder="MIT" required>
                     </div>
 
                     <div class="form-group">
                         <label for="">Degree</label>
-                        <input name="degree" type="text" class="form-control" id="degree"  placeholder="B-Tech Infromation Technology">
+                        <input name="degree" type="text" class="form-control" id="degree"  placeholder="B-Tech Infromation Technology" >
                     </div>
 
                     <div class="form-group">
@@ -61,12 +64,12 @@
 
                     <div class="form-group">
                         <label for="">Skill</label>
-                        <textarea rows="2" cols="50" name="skill" id="skill" type="text" class="form-control" placeholder="eg C, C++, Python,"> </textarea>
+                        <textarea rows="2" cols="50" name="skill" id="skill" type="text" class="form-control" placeholder="eg C, C++, Python" required> </textarea>
                     </div>
 
                     <div class="form-group">
                         <label for="">About You</label>
-                        <textarea rows="2" cols="50" name="about_you" id="about_you" type="text" class="form-control" placeholder="Write something about you"> </textarea>
+                        <textarea rows="2" cols="50" name="about_you" id="about_you" type="text" class="form-control" placeholder="Write something about you" required> </textarea>
                     </div>
 
                     <div class="form-group">
