@@ -11,3 +11,6 @@ class Profile(models.Model):
     skill = models.TextField()
     about_you = models.TextField()
     previous_work = models.TextField()
+
+    def __str__(self) -> str:
+        return self.name
